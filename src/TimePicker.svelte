@@ -97,6 +97,10 @@
           transform: scale(0.95);
 }
 
+.touch-time{
+  font-size: 30px;
+  font-weight: 300;
+}
 
 </style>
 
