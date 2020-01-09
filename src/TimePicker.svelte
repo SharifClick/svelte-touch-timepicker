@@ -9,6 +9,7 @@
   export let time = new Date();
   export let _time, selectedHour, selectedMeridiem;
   export let visible = false;
+  export let classes = '';
 
   let resetTime = (event) => {
     event.stopPropagation()
@@ -104,7 +105,7 @@
 
 </style>
 
-<input type="text" readonly value={_time} on:focus={() => {visible = !visible}}>
+<input type="text" class='{classes}' readonly value={_time} on:focus={() => {visible = !visible}}>
 {#if visible}
   <div class="touch-time-popup" >
     <div>
