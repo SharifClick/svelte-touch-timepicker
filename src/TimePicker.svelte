@@ -47,38 +47,37 @@
 </script>
 
 <style>
-.touch-time {
-  font-size: 30px;
-  font-weight: 300;
-}
-
 .touch-time-popup{
- position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
+  z-index: 1;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
   background: rgba(0, 0, 0, 0.3);
+  touch-action: pan-down;
 }
 .touch-time-popup > div{
-    background: white;
-    margin-top: 30vh;
-    width: 80%;
-    margin-left: 7%;
-    border-radius: 10px;
-    padding: 10px;
+  background: var(--svtt-popup-bg-color, white);
+  color: var(--svtt-popup-color, black);
+  margin-top: 30vh;
+  width: 85%;
+  margin-left: 7%;
+  border-radius: var(--svtt-popup-radius, 10px);
 }
 .touch-time-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font: 20px 'Roboto', sans-serif;
+  font-size: var(--svtt-font-size, 20px);
+  padding: 1.5rem;
 }
 
 .touch-time-picker {
   display: flex;
   padding: 50px 20px;
-  margin: 30px 0;
+  margin: 10px 0;
   overflow: hidden;
 }
 
@@ -86,17 +85,18 @@
   width: 100px;
   height: 30px;
   border-radius: 15px;
-  border: none;
+  border: var(--svtt-border, 1px solid grey);
   outline: none;
-  color: #fff;
-  background-color: #2466fb;
-  box-shadow: 0 1px 10px -2px #2466fb;
+  color: var(--svtt-button-color, black);
+  background-color: var(--svtt-button-bg-color, transparent);
+  box-shadow: var(--svtt-button-box-shadow, none) ;
   font-weight: 300;
 }
-.touch-time-reset:active {
+.touch-time-reset button:nth-child(1):active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
+
 
 </style>
 
