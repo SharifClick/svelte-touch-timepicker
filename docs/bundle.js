@@ -538,8 +538,8 @@ var app = (function () {
     		}
     	});
 
-    	function onDateChange(type, changedData) {
-    		dispatch("dateChange", { type, changedData });
+    	function onTimeChange(type, changedData) {
+    		dispatch("timeChange", { type, changedData });
     	}
 
     	function setPosition() {
@@ -582,7 +582,7 @@ var app = (function () {
     		window.removeEventListener("touchmove", onMouseMove);
     		window.removeEventListener("touchend", onMouseUp);
     		setPosition();
-    		onDateChange(type, -finalPosition / 50);
+    		onTimeChange(type, -finalPosition / 50);
     	};
 
     	const writable_props = ["selected", "data", "type"];
@@ -644,7 +644,7 @@ var app = (function () {
     		dragging,
     		previousY,
     		dispatch,
-    		onDateChange,
+    		onTimeChange,
     		setPosition,
     		onMouseMove,
     		onMouseUp,
