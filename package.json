@@ -1,0 +1,54 @@
+{
+  "name": "svelte-touch-timepicker",
+  "version": "1.0.0",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "description": "Native like touch timepicker for Svelte",
+  "homepage": "https://github.com/SharifClick/svelte-touch-timepicker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SharifClick/svelte-touch-timepicker"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/SharifClick/svelte-touch-timepicker/issues"
+  },
+  "author": {
+    "name": "Sharif Ahmed",
+    "email": "me.sharifahmed@gmail.com",
+    "url": "http://sharifahmed.me"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.12.0",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-bundle-size": "^1.0.3",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "svelte": "^3.16.5",
+    "sirv-cli": "^0.4.4"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c rollup.dev.config.js -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv docs --single",
+    "start:dev": "sirv docs --single --dev"
+  },
+  "keywords": [
+    "svelte",
+    "svelte.js",
+    "sveltejs",
+    "svelte-touch-timepicker",
+    "touch-timepicker",
+    "timepicker",
+    "native-timepicker",
+    "time-picker"
+  ]
+}
