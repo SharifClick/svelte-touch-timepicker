@@ -29,8 +29,8 @@
   });
 
 
-  function onDateChange(type, changedData) {
-		dispatch('dateChange', {
+  function onTimeChange(type, changedData) {
+		dispatch('timeChange', {
 			type, changedData
 		});
   }
@@ -79,7 +79,7 @@
     window.removeEventListener('touchend', onMouseUp);
 
     setPosition();
-    onDateChange(type, -finalPosition / 50);
+    onTimeChange(type, -finalPosition / 50);
   }
 
 
