@@ -7,7 +7,7 @@ import pkg from './package.json';
 
 export default [
   {
-    input: 'src/DatePicker.svelte',
+    input: 'src/TimePicker.svelte',
     output: [
       { file: pkg.module, 'format': 'es' },
       { file: pkg.main, 'format': 'umd', name: 'TimePicker' }
