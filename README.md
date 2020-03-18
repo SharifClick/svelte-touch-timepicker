@@ -41,7 +41,7 @@ npm i svelte-touch-timepicker
 <div class="container" >
   <div class="center">
     <p>Time: {_time}</p>
-    <TimePicer bind:time />
+    <TimePicker bind:time />
   </div>
 </div>
 
