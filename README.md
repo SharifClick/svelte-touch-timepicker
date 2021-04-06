@@ -8,7 +8,7 @@
 ## Installation
 
 ```bash
-npm i svelte-touch-timepicker
+npm i -D svelte-touch-timepicker
 ```
 
 ## Usage
